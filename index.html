@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,20 @@
 
     <!-- Estilos CSS -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <!-- jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Slider-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+   
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <!-- Mis scripts-->
+    <script type="text/javascript" src="js/main.js"></script>
+
 </head>
+
 <body>
     <section id="global">
         <!-- Cabecera-->
@@ -18,16 +32,23 @@
             </div>
             <div class="clearfix"></div>
             <nav id="menu">
-                 <ul>
+                <ul>
                     <li><a href="#">Inicio</a></li>
                     <li><a href="#">Reloj</a></li>
                     <li><a href="#">Sobre mi</a></li>
                     <li><a href="#">Contacto</a></li>
-                 </ul>
+                </ul>
             </nav>
         </header>
-        <!-- Slider-->
-        <div id="slider"></div>
+        <!-- Slider  1467-->
+        <div id="slider">
+                <div class="galeria">
+                        <div><img src="img/fondo-4.jpg" title="oc de eriezly"></div>
+                        <div><img src="img/fondo-1.jpg" title="oc de eriezly"></div>
+                        <div><img src="img/fondo-2.jpg" title="oc de eriezly"></div>
+                        <div><img src="img/fondo-3.jpg" title="DTIYS hannan100K"></div>
+                </div>
+        </div>
 
         <!-- Contenido-->
         <section id="content">
@@ -35,15 +56,19 @@
                 <article class="post">
                     <h2>Titulo del articulo</h2>
                     <span class="date">Fecha de publicación</span>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti harum velit veritatis! Veritatis iste deserunt quod perspiciatis sit! Eligendi voluptate impedit expedita dolorum voluptatem ut aliquid magnam accusamus nisi doloribus.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti harum velit veritatis!
+                        Veritatis iste deserunt quod perspiciatis sit! Eligendi voluptate impedit expedita dolorum
+                        voluptatem ut aliquid magnam accusamus nisi doloribus.</p>
                     <a href="#" class="button-more">Leer más</a>
                 </article>
                 <article class="post">
-                        <h2>Titulo del articulo</h2>
-                        <span class="date">Fecha de publicación</span>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti harum velit veritatis! Veritatis iste deserunt quod perspiciatis sit! Eligendi voluptate impedit expedita dolorum voluptatem ut aliquid magnam accusamus nisi doloribus.</p>
-                        <a href="#" class="button-more">Leer más</a>
-                    </article>
+                    <h2>Titulo del articulo</h2>
+                    <span class="date">Fecha de publicación</span>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti harum velit veritatis!
+                        Veritatis iste deserunt quod perspiciatis sit! Eligendi voluptate impedit expedita dolorum
+                        voluptatem ut aliquid magnam accusamus nisi doloribus.</p>
+                    <a href="#" class="button-more">Leer más</a>
+                </article>
             </div>
             <aside id="sidebar">
                 <div id="about">
@@ -57,18 +82,18 @@
                         <li>🍄 My style changes a lot.</li>
                         <li>🍄 Commissions: open [DM me].</li>
                     </ul>
-                   
+
                 </div>
                 <div id="login">
                     <h4><span>Identificate</span></h4>
                     <form>
                         <label for="name">Nombre</label>
-                        <input type="text" name="name"/>
+                        <input type="text" name="name" />
                         <label for="email">Correo</label>
-                        <input type="text" name="email"/>
+                        <input type="text" name="email" />
                         <label for="password">Password</label>
-                        <input type="password" name="password"/>
-                        <input type="submit" value="Entrar"/>
+                        <input type="password" name="password" />
+                        <input type="submit" value="Entrar" />
                     </form>
                 </div>
             </aside>
@@ -81,4 +106,5 @@
         Visitame en: www.instagram.com/eriezly/ <a href="https://www.instagram.com/eriezly/">clic</a>
     </footer>
 </body>
+
 </html>

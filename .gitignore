@@ -1,0 +1,7 @@
+https://bxslider.com
+
+
+hacer menos alto el slider
+.bx-wrapper, .bx-viewport{
+    height: 500px !important;
+}
