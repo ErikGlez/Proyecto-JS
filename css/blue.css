@@ -1,0 +1,22 @@
+#logo{
+    background: rgb(93, 161, 206);  
+}
+
+#menu ul li:hover{
+    background:  rgb(93, 161, 206);
+}
+
+.button-more{
+    background:  rgb(93, 161, 206);
+}
+
+form input[type="submit"]{
+    background: rgb(93, 161, 206);
+   
+    border: 1px solid rgb(93, 161, 206);
+   
+}
+form input[type="submit"]:hover{
+    background:rgb(112, 179, 224);
+    border: 1px solid rgb(112, 179, 224);
+}

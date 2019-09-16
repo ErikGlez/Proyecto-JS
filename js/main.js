@@ -45,6 +45,32 @@ $(document).ready(function () {
 
     });
 
+    //selector de temas
+    var theme = $("#theme");
+    $("#to-orange").click(function(){
+
+        theme.attr("href", "css/orange.css");
+    });
+    $("#to-blue").click(function(){
+
+        theme.attr("href", "css/blue.css");
+    });
+    $("#to-brown").click(function(){
+
+        theme.attr("href", "css/brown.css");
+    });
+
+    //scroll arriba
+    $(".subir").click(function(e){
+         e.preventDefault();
+
+         $('html,body').animate({
+          scrollTop:0
+         },500);
+
+         return false;
+    });
+
 
 
 });
