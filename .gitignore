@@ -1,12 +1,1 @@
-https://bxslider.com
-
-
-hacer menos alto el slider
-.bx-wrapper, .bx-viewport{
-    height: 500px !important;
-}
-
-
-https://cdnjs.com/libraries/moment.js/
-
-moment().format("MMMM Do YYYY")
+notas.txt
