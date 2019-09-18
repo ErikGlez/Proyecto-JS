@@ -148,6 +148,24 @@ body{
     font-weight: bold;
 }
 
+#bienvenido{
+    
+    margin-top: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    
+}
+
+#plogout{
+    
+    margin-top: 10px;
+    font-weight: bold;
+    color:#333;
+    text-align: center;
+    
+}
+
 form input[type="text"],
 form input[type="password"],
 form input[type="email"]{
