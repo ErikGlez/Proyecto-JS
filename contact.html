@@ -11,18 +11,20 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link id="theme" rel="stylesheet" type="text/css" href="css/orange.css">
 
+
     <!-- jQuery-->
-        <!-- jQuery-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-        <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
-        <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
-        <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
-        <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
- 
-   
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="js/jquery-ui-1.12.1/jquery-ui.theme.min.css">
+    <script type="text/javascript" src="js/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+
+    <!-- Pluggin validacion-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-form-validator/2.3.26/jquery.form-validator.min.js"></script>
     <!-- Mis scripts-->
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/about.js"></script>
+    <script type="text/javascript" src="js/contact.js"></script>
 
 </head>
 
@@ -31,7 +33,7 @@
         <div id="to-blue"></div>
         <div id="to-brown"></div>
         <div id="to-orange"></div>
-        
+
     </div>
     <section id="global">
         <!-- Cabecera-->
@@ -49,21 +51,33 @@
                 </ul>
             </nav>
         </header>
-        
+
 
         <!-- Contenido-->
         <section id="content">
             <div id="box">
-               <!-- Cargar acordeon-->
-               <h2>Sobre mi</h2>
-               <div id="acordeon">
-                <h3>¿Quien soy?</h3>
-                <div>Soy Erik González, tengo 22 años, soy de Empalme, Son. y mi pasatiempo es dibujar en digital.</div>
-                <h3>¿por que eriezly?</h3>
-                <div>El nombre eriezly surgío de erik "eri" y gonzález "ez" y "ly" para terminar formando un nick algo mas único, ya que no quería un nombre que ya estuviera siendo usado.</div>
-                <h3>Actividad</h3>
-                <div>Subo dibujos regularmente cada 2 días o 3, por lo regular entre las 9am y 12pm ya que es la hora con mas actividad de mis seguidores.</div>
-               </div>
+                <!-- Cargar formulario de contacto-->
+                <h2>Contacto</h2>
+                <form action="" method="POST"  id="form_contact">
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" data-validation="alphanumeric" />
+                    <label for="surname">Apellido</label>
+                    <input type="text" name="surname" data-validation="alphanumeric"/>
+                    <label for="">Email</label>
+                    <input type="email" name="email" data-validation="email" />
+                    <label for="genero">Genero</label>
+                    <select name="genero" data-validation="required">
+                        <option value="men">Hombre</option>
+                        <option value="woman">Mujer</option>
+                    </select>
+                    <label for="date">Fecha de nacimiento</label>
+                    <input type="text" name="date" data-validation="date" data-validation-format="dd-mm-yyyy"/>
+                    <label for="years">Edad</label>
+                    <input type="number" name="years" data-validation="number" />
+
+                    <input type="submit" value="Enviar" />
+                </form>
+
             </div>
             <aside id="sidebar">
                 <div id="about">
